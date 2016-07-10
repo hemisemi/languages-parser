@@ -10,8 +10,8 @@ DOCDIR := doc
 INCPATH := -I$(SRCDIR)
 LIBS	:= 
 
-TARGET := hsm-lang-grammar
-INSTALL_PATH := /usr/include/hsm/lang/grammar
+TARGET := hsm-lang-parser
+INSTALL_PATH := /usr/include/hsm/lang/parser
 
 SRC := $(shell find $(SRCDIR) -name '*.cpp')
 HDR := $(shell find $(SRCDIR) -name '*.h')
