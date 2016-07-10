@@ -1,11 +1,19 @@
-#ifndef PARSER_H
-#define PARSER_H
+#pragma once
 
+namespace hsm{
+namespace lang{
 
-class parser
-{
+class grammar;
+
+class parser{
 public:
-	parser();
+	parser(lang::grammar *grammar);
+
+	lang::grammar *grammar() const;
+
+private:
+	lang::grammar *_g;
 };
 
-#endif // PARSER_H
+}
+}
